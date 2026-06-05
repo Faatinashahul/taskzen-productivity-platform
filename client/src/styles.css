@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #eef2f3, #dfe9f3);
+  margin: 0;
+  padding: 20px;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Input section */
+.board-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.board-input input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.board-input button {
+  padding: 10px 15px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.board-input button:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+/* GRID */
+.board-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* CARD */
+.board-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 0.4s ease;
+}
+
+.board-card h3 {
+  margin: 0;
+}
+
+.board-card p {
+  font-size: 12px;
+  color: gray;
+  margin-top: 10px;
+}
+
+/* Hover effect */
+.board-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  background: #e9f2ff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hover effect for cards */
+div[style*="linear-gradient"]:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Button hover */
+button:hover {
+  opacity: 0.9;
+  transform: scale(1.03);
+}
