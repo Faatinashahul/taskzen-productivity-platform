@@ -13,7 +13,7 @@ function Landing() {
         position: "relative",           // ✅ FORCE FULL SCREEN
         top: 0,
         left: 0,
-        backgroundImage: "url('/assets/bg_cute.png')", // 👈 FULL BACKGROUND
+        backgroundImage: "url('/bg_cute.png')", // 👈 FULL BACKGROUND
         backgroundSize: "cover",       // fills screen
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
