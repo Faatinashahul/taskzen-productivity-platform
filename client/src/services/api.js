@@ -1,7 +1,9 @@
 import axios from "axios";
 
+// In Docker: Nginx proxies /api -> backend:5000
+// In local dev: falls back to http://localhost:5000/api
 const API = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL: import.meta.env.VITE_API_URL || "http://localhost:5000/api",
 });
 
 // Attach JWT token to every request automatically
