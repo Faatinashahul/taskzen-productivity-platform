@@ -7,6 +7,8 @@ TaskZen is a full-stack productivity application designed to help users efficien
 The platform combines task organization, deadline planning, productivity analytics, note management, and activity tracking into a single unified workspace, enabling users to stay focused and productive.
 
 ---
+### DEPLOYED AND CONTAINERISED:
+ https://taskzen-frontend-748989955455.us-central1.run.app
 
 ## Overview
 
